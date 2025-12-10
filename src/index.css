@@ -1,5 +1,7 @@
 /* alap beállítások */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -51,19 +53,22 @@ header p {
 .input-row {
   /* border: 1px solid black; */
   display: flex;
-  /* flex-direction: row; */ /* ez a default beállítás flexnél */
+  /* flex-direction: row; */
+  /* ez a default beállítás flexnél */
   gap: 1.75rem;
   margin: 1.25rem;
 }
 
 .input-row input {
-  flex: 1; /* az input mező a lehető legnagyobb helyet foglalja el */
+  flex: 1;
+  /* az input mező a lehető legnagyobb helyet foglalja el */
   padding: 1rem;
   border-radius: 1.75rem;
   border: 1px solid #D1D5DB;
   font-size: 1.2rem;
   outline: none;
-  transition: border-color 1s, box-shadow 1s; /* ha animálva lesz (pl focus-ba kerül) az input mező, akkor a border-color és a box-shadow 1 másodperc alatt megy végbe az animálás = fluid lesz az animáció*/
+  transition: border-color 1s, box-shadow 1s;
+  /* ha animálva lesz (pl focus-ba kerül) az input mező, akkor a border-color és a box-shadow 1 másodperc alatt megy végbe az animálás = fluid lesz az animáció*/
 }
 
 .input-row input:focus {
@@ -80,8 +85,9 @@ header p {
   font-weight: 600;
   font-size: 1.2rem;
   cursor: pointer;
-  box-shadow :0 8px 16px #3b82f680;
-  white-space: nowrap; /* nem engedi megtörni a szöveget a gombban */
+  box-shadow: 0 8px 16px #3b82f680;
+  white-space: nowrap;
+  /* nem engedi megtörni a szöveget a gombban */
   transition: transform 0.1s, box-shadow 0.1s, background 0.1s;
 }
 
@@ -162,6 +168,7 @@ button.clear-btn:not(:disabled):hover {
   background: #FECACA;
   transform: translateY(-1px);
 }
+
 /*  :not(:disabled) -> csak akkor alkalmazza az active stílust, ha a gomb nem disabled */
 button.clear-btn:not(:disabled):active {
   transform: translateY(0);
@@ -261,13 +268,14 @@ footer {
   color: #6B7280;
 }
 
-@media (max-width: 600px){
-    .input-row{
-      gap: 0.5rem;
-      flex-direction: column;
-      align-items: center;
-    }
+@media (max-width: 600px) {
+  .input-row {
+    gap: 0.5rem;
+    flex-direction: column;
+    align-items: center;
   }
+}
+
 .input-row button {
   width: 150px;
   height: 50px;
