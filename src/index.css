@@ -274,10 +274,10 @@ footer {
     flex-direction: column;
     align-items: center;
   }
-}
 
-.input-row button {
-  width: 150px;
-  height: 50px;
+  .input-row button {
+    width: 150px;
+    height: 50px;
 
+  }
 }
