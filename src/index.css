@@ -260,3 +260,16 @@ footer {
   font-size: 1.2rem;
   color: #6B7280;
 }
+
+@media (max-width: 600px){
+    .input-row{
+      gap: 0.5rem;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+.input-row button {
+  width: 150px;
+  height: 50px;
+
+}
